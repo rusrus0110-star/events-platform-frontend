@@ -1,0 +1,357 @@
+body {
+  outline: 10px solid blue;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding-block: clamp(3rem, 6vw, 6rem);
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.hero__text {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.hero__image {
+  min-height: 300px;
+  background: #f2f2f2;
+}
+.events-preview__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.events-near__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.events-near__heading {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.events-near__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.events-near__link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.events-near__location {
+  font-size: 1rem;
+  color: #666;
+}
+.join {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding-block: 4rem;
+}
+
+.join__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.join__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1.5rem;
+  max-width: 38rem;
+}
+
+.join__image {
+  min-height: 220px;
+  background: #f2f2f2; // временно, потом SVG
+  border-radius: 1rem;
+}
+@media (max-width: 768px) {
+  .join {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .join__image {
+    order: -1;
+  }
+}
+.categories {
+  padding-block: 3.5rem;
+}
+
+.categories__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.categories__list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1.25rem;
+}
+
+/* ⬇️ КВАДРАТНАЯ КАРТОЧКА */
+.category {
+  aspect-ratio: 1 / 1;
+  background: #f7f7f7;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.category:hover {
+  background: #eeeeee;
+}
+
+.category__icon {
+  width: 32px;
+  height: 32px;
+  background: #dcdcdc; // временно вместо SVG
+  border-radius: 6px;
+}
+
+.category__name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.3;
+}
+
+@media (max-width: 1024px) {
+  .categories__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .categories__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.cities {
+  padding-block: 4rem;
+}
+
+.cities__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cities__text {
+  font-size: 0.95rem;
+  color: #666;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+
+.cities__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.city__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ddd; // временно вместо фото
+  overflow: hidden;
+}
+
+.city__name {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .cities__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cities__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.how {
+  padding-block: 3.5rem;
+}
+
+.how__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+}
+
+.how__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.how-card {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #f6f7f8; // серый блок как в макете
+}
+
+.how-card__icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.2rem;
+}
+
+.how-card__icon-placeholder {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #d9dde1; // временно, пока нет SVG
+}
+
+.how-card__title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 0.5rem;
+}
+
+.how-card__text {
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: #666;
+  max-width: 48ch; // чтобы текст выглядел "абзацем" как в макете
+}
+
+.how-card__link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.how-card__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .how__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.friendships {
+  padding-block: 3.5rem;
+}
+
+.friendships__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.friendships__intro {
+  max-width: 68ch;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #555;
+  margin: 0 0 2rem;
+}
+
+.friendships__intro a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.friendships__intro a:hover {
+  text-decoration: underline;
+}
+
+.friendships__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.friendship-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.friendship-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.friendship-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.5rem;
+}
+
+.friendship-card__text {
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: #666;
+  margin: 0 0 0.75rem;
+}
+
+.friendship-card__link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.friendship-card__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .friendships__grid {
+    grid-template-columns: 1fr;
+  }
+}
