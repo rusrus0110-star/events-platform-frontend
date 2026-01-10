@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -119,1346 +126,1355 @@
     </header>
 
     <main>
-      <!-- HERO -->
-      <section class="hero container">
-        <div class="hero__content">
-          <h1 class="hero__title">
-            The people platform—Where interests become friendships
-          </h1>
+      <div class="main__inner">
+        <!-- HERO -->
+        <section class="hero container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              The people platform—Where interests become friendships
+            </h1>
 
-          <p class="hero__text">
-            Whatever your interest, from hiking and reading to networking and
-            skill sharing, there are thousands of people who share it on Meetup.
-          </p>
+            <p class="hero__text">
+              Whatever your interest, from hiking and reading to networking and
+              skill sharing, there are thousands of people who share it on
+              Meetup. Events are happening every day—sign up to join the fun.
+            </p>
 
-          <a href="#" class="btn btn--primary">Join Meetup</a>
-        </div>
-
-        <div class="hero__image"></div>
-      </section>
-
-      <section class="events-near container">
-        <div class="events-near__header">
-          <div class="events-near__heading">
-            <h2 class="events-near__title">Events near</h2>
-            <span class="events-near__location">Mountain View, CA</span>
+            <a href="#" class="btn__join">Join Meetup</a>
           </div>
 
-          <a href="#" class="events-near__link">See all events</a>
-        </div>
+          <div class="hero__image">
+            <img class="image"
+              src="assets/images/hero/hero_Illustration.svg"
+              alt="People enjoying an event"
+            />
+          </div>
+        </section>
 
-        <div class="events-preview__grid">
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
+        <section class="events-near container">
+          <div class="events-near__header">
+            <div class="events-near__heading">
+              <h2 class="events-near__title">Events near</h2>
+              <span class="events-near__location">Mountain View, CA</span>
             </div>
 
-            <div class="event-card__image"></div>
+            <a href="#" class="events-near__link">See all events</a>
+          </div>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
-
-              <div class="event-card__details">
-                <span class="event-card__item">
+          <div class="events-preview__grid">
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__image"></div>
 
-            <div class="event-card__image"></div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__image"></div>
 
-            <div class="event-card__image"></div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__image"></div>
 
-            <div class="event-card__image"></div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__image"></div>
 
-            <div class="event-card__image"></div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__image"></div>
 
-            <div class="event-card__image"></div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__image"></div>
 
-            <div class="event-card__image"></div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__image"></div>
 
-            <div class="event-card__image"></div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-        </div>
-      </section>
+              <div class="event-card__image"></div>
 
-      <!-- EVENTS PREVIEW -->
-      <section class="events-preview container">
-        <div class="events-preview__header">
-          <h2 class="events-preview__title">Upcoming online events</h2>
-          <a href="#" class="events-preview__link">See all events</a>
-        </div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-        <div class="events-preview__grid">
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-            <div class="event-card__image"></div>
+                  <span class="event-card__dot">•</span>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- EVENTS PREVIEW -->
+        <section class="events-preview container">
+          <div class="events-preview__header">
+            <h2 class="events-preview__title">Upcoming online events</h2>
+            <a href="#" class="events-preview__link">See all events</a>
+          </div>
+
+          <div class="events-preview__grid">
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__image"></div>
 
-            <div class="event-card__image"></div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__image"></div>
 
-            <div class="event-card__image"></div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
+              <div class="event-card__image"></div>
 
-          <article class="event-card">
-            <div class="event-card__top">
-              <span class="event-card__badge">
-                <svg
-                  class="event-card__icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Online Event
-              </span>
-            </div>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
 
-            <div class="event-card__image"></div>
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
 
-            <div class="event-card__content">
-              <h3 class="event-card__title">Event title</h3>
+                  <span class="event-card__dot">•</span>
 
-              <div class="event-card__details">
-                <span class="event-card__item">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__top">
+                <span class="event-card__badge">
                   <svg
                     class="event-card__icon"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
-                      d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
+                      d="M17 10.5V7c0-1.1-.9-2-2-2H3C1.9 5 1 5.9 1 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.5l6 4v-11l-6 4z"
+                      fill="currentColor"
                     />
                   </svg>
-                  Thu, Apr 25 · 6:00 PM
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  25 going
-                </span>
-
-                <span class="event-card__dot">•</span>
-
-                <span class="event-card__item">
-                  <svg
-                    class="event-card__icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  Free
+                  Online Event
                 </span>
               </div>
 
-              <p class="event-card__meta">Online • Technology</p>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="join container">
-        <div class="join__content">
-          <h2 class="join__title">Join Meetup</h2>
+              <div class="event-card__image"></div>
 
-          <p class="join__text">
-            People use Meetup to meet new people, learn new things, find
-            support, get out of their comfort zones, and pursue their passions,
-            together. Membership is free.
+              <div class="event-card__content">
+                <h3 class="event-card__title">Event title</h3>
+
+                <div class="event-card__details">
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 2v2M17 2v2M4 7h16M6 4h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2-2 0 0 1 2-2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Thu, Apr 25 · 6:00 PM
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 11a4 4 0 1 0-8 0M3 21a7 7 0 0 1 18 0"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    25 going
+                  </span>
+
+                  <span class="event-card__dot">•</span>
+
+                  <span class="event-card__item">
+                    <svg
+                      class="event-card__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 7h16v6a8 8 0 0 1-16 0V7Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Free
+                  </span>
+                </div>
+
+                <p class="event-card__meta">Online • Technology</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="join container">
+          <div class="join__content">
+            <h2 class="join__title">Join Meetup</h2>
+
+            <p class="join__text">
+              People use Meetup to meet new people, learn new things, find
+              support, get out of their comfort zones, and pursue their
+              passions, together. Membership is free.
+            </p>
+
+            <a href="#" class="btn btn--primary">Sign up</a>
+          </div>
+
+          <div class="join__image"></div>
+        </section>
+        <section class="categories container">
+          <h2 class="categories__title">Explore top categories</h2>
+
+          <ul class="categories__list">
+            <li class="category">
+              <span class="category__icon"></span>
+              <span class="category__name">Travel and Outdoor</span>
+            </li>
+
+            <li class="category">
+              <span class="category__icon"></span>
+              <span class="category__name">Social Activities</span>
+            </li>
+
+            <li class="category">
+              <span class="category__icon"></span>
+              <span class="category__name">Hobbies and Passions</span>
+            </li>
+
+            <li class="category">
+              <span class="category__icon"></span>
+              <span class="category__name">Sports and Fitness</span>
+            </li>
+
+            <li class="category">
+              <span class="category__icon"></span>
+              <span class="category__name">Health and Wellbeing</span>
+            </li>
+
+            <li class="category">
+              <span class="category__icon"></span>
+              <span class="category__name">Technology</span>
+            </li>
+
+            <li class="category">
+              <span class="category__icon"></span>
+              <span class="category__name">Art and Culture</span>
+            </li>
+
+            <li class="category">
+              <span class="category__icon"></span>
+              <span class="category__name">Games</span>
+            </li>
+          </ul>
+        </section>
+        <section class="cities container">
+          <h2 class="cities__title">Popular cities on Meetup</h2>
+
+          <p class="cities__text">
+            Looking for fun things to do near you? See what Meetup organizers
+            are planning in cities around the country.
           </p>
 
-          <a href="#" class="btn btn--primary">Sign up</a>
-        </div>
+          <ul class="cities__list">
+            <li class="city">
+              <div class="city__image"></div>
+              <span class="city__name">New York</span>
+            </li>
 
-        <div class="join__image"></div>
-      </section>
-      <section class="categories container">
-        <h2 class="categories__title">Explore top categories</h2>
+            <li class="city">
+              <div class="city__image"></div>
+              <span class="city__name">San Francisco</span>
+            </li>
 
-        <ul class="categories__list">
-          <li class="category">
-            <span class="category__icon"></span>
-            <span class="category__name">Travel and Outdoor</span>
-          </li>
+            <li class="city">
+              <div class="city__image"></div>
+              <span class="city__name">Chicago</span>
+            </li>
 
-          <li class="category">
-            <span class="category__icon"></span>
-            <span class="category__name">Social Activities</span>
-          </li>
+            <li class="city">
+              <div class="city__image"></div>
+              <span class="city__name">Nashville</span>
+            </li>
 
-          <li class="category">
-            <span class="category__icon"></span>
-            <span class="category__name">Hobbies and Passions</span>
-          </li>
+            <li class="city">
+              <div class="city__image"></div>
+              <span class="city__name">Miami</span>
+            </li>
+          </ul>
+        </section>
+        <section class="how container">
+          <h2 class="how__title">How Meetup works</h2>
 
-          <li class="category">
-            <span class="category__icon"></span>
-            <span class="category__name">Sports and Fitness</span>
-          </li>
+          <div class="how__grid">
+            <article class="how-card">
+              <div class="how-card__icon" aria-hidden="true">
+                <span class="how-card__icon-placeholder"></span>
+              </div>
 
-          <li class="category">
-            <span class="category__icon"></span>
-            <span class="category__name">Health and Wellbeing</span>
-          </li>
+              <div class="how-card__body">
+                <h3 class="how-card__title">Discover events and groups</h3>
 
-          <li class="category">
-            <span class="category__icon"></span>
-            <span class="category__name">Technology</span>
-          </li>
+                <p class="how-card__text">
+                  See who&#39;s hosting local events for all the things you love
+                </p>
 
-          <li class="category">
-            <span class="category__icon"></span>
-            <span class="category__name">Art and Culture</span>
-          </li>
+                <a class="how-card__link" href="#">Search events and groups</a>
+              </div>
+            </article>
 
-          <li class="category">
-            <span class="category__icon"></span>
-            <span class="category__name">Games</span>
-          </li>
-        </ul>
-      </section>
-      <section class="cities container">
-        <h2 class="cities__title">Popular cities on Meetup</h2>
+            <article class="how-card">
+              <div class="how-card__icon" aria-hidden="true">
+                <span class="how-card__icon-placeholder"></span>
+              </div>
 
-        <p class="cities__text">
-          Looking for fun things to do near you? See what Meetup organizers are
-          planning in cities around the country.
-        </p>
+              <div class="how-card__body">
+                <h3 class="how-card__title">Start a group to host events</h3>
 
-        <ul class="cities__list">
-          <li class="city">
-            <div class="city__image"></div>
-            <span class="city__name">New York</span>
-          </li>
+                <p class="how-card__text">
+                  Create your own Meetup group, and draw from a community of
+                  millions
+                </p>
 
-          <li class="city">
-            <div class="city__image"></div>
-            <span class="city__name">San Francisco</span>
-          </li>
+                <a class="how-card__link" href="#">Start a group</a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="friendships container">
+          <h2 class="friendships__title">Friendships are made on Meetup</h2>
 
-          <li class="city">
-            <div class="city__image"></div>
-            <span class="city__name">Chicago</span>
-          </li>
+          <p class="friendships__intro">
+            Since 2002, members have used Meetup to make new friends, meet
+            like-minded people, spend time on hobbies, and connect with locals
+            over shared interests.
+            <a href="#">Learn how</a>
+          </p>
 
-          <li class="city">
-            <div class="city__image"></div>
-            <span class="city__name">Nashville</span>
-          </li>
+          <div class="friendships__grid">
+            <article class="friendship-card">
+              <img
+                src="images/friends-brunch.jpg"
+                alt=""
+                class="friendship-card__image"
+              />
 
-          <li class="city">
-            <div class="city__image"></div>
-            <span class="city__name">Miami</span>
-          </li>
-        </ul>
-      </section>
-      <section class="how container">
-        <h2 class="how__title">How Meetup works</h2>
+              <h3 class="friendship-card__title">
+                I Used Meetup to Make Friends at Brunch
+              </h3>
 
-        <div class="how__grid">
-          <article class="how-card">
-            <div class="how-card__icon" aria-hidden="true">
-              <span class="how-card__icon-placeholder"></span>
-            </div>
-
-            <div class="how-card__body">
-              <h3 class="how-card__title">Discover events and groups</h3>
-
-              <p class="how-card__text">
-                See who&#39;s hosting local events for all the things you love
+              <p class="friendship-card__text">
+                New Jersey-based writer and college student Brianna Stryker
+                wanted to meet friends in her hometown. Learn how she used
+                Meetup to make connections by joining a Girls Night Out Meetup
+                group.
               </p>
 
-              <a class="how-card__link" href="#">Search events and groups</a>
-            </div>
-          </article>
+              <a href="#" class="friendship-card__link">Read more</a>
+            </article>
 
-          <article class="how-card">
-            <div class="how-card__icon" aria-hidden="true">
-              <span class="how-card__icon-placeholder"></span>
-            </div>
+            <article class="friendship-card">
+              <img
+                src="images/friends-hike.jpg"
+                alt=""
+                class="friendship-card__image"
+              />
 
-            <div class="how-card__body">
-              <h3 class="how-card__title">Start a group to host events</h3>
+              <h3 class="friendship-card__title">
+                How to Turn Casual Connections into Close Friendships
+              </h3>
 
-              <p class="how-card__text">
-                Create your own Meetup group, and draw from a community of
-                millions
+              <p class="friendship-card__text">
+                It’s proven that close friendships are harder to make as an
+                adult, but don’t sweat it: here’s what you can do to simplify
+                the process.
               </p>
 
-              <a class="how-card__link" href="#">Start a group</a>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="friendships container">
-        <h2 class="friendships__title">Friendships are made on Meetup</h2>
+              <a href="#" class="friendship-card__link">Read more</a>
+            </article>
 
-        <p class="friendships__intro">
-          Since 2002, members have used Meetup to make new friends, meet
-          like-minded people, spend time on hobbies, and connect with locals
-          over shared interests.
-          <a href="#">Learn how</a>
-        </p>
+            <article class="friendship-card">
+              <img
+                src="images/friends-laugh.jpg"
+                alt=""
+                class="friendship-card__image"
+              />
 
-        <div class="friendships__grid">
-          <article class="friendship-card">
-            <img
-              src="images/friends-brunch.jpg"
-              alt=""
-              class="friendship-card__image"
-            />
+              <h3 class="friendship-card__title">
+                Do You Have the “Right” Number of Friends?
+              </h3>
 
-            <h3 class="friendship-card__title">
-              I Used Meetup to Make Friends at Brunch
-            </h3>
+              <p class="friendship-card__text">
+                Studies from around the world have tried to help people answer
+                this question. Learn about the three tiers of friendship and how
+                to fulfill them.
+              </p>
 
-            <p class="friendship-card__text">
-              New Jersey-based writer and college student Brianna Stryker wanted
-              to meet friends in her hometown. Learn how she used Meetup to make
-              connections by joining a Girls Night Out Meetup group.
-            </p>
-
-            <a href="#" class="friendship-card__link">Read more</a>
-          </article>
-
-          <article class="friendship-card">
-            <img
-              src="images/friends-hike.jpg"
-              alt=""
-              class="friendship-card__image"
-            />
-
-            <h3 class="friendship-card__title">
-              How to Turn Casual Connections into Close Friendships
-            </h3>
-
-            <p class="friendship-card__text">
-              It’s proven that close friendships are harder to make as an adult,
-              but don’t sweat it: here’s what you can do to simplify the
-              process.
-            </p>
-
-            <a href="#" class="friendship-card__link">Read more</a>
-          </article>
-
-          <article class="friendship-card">
-            <img
-              src="images/friends-laugh.jpg"
-              alt=""
-              class="friendship-card__image"
-            />
-
-            <h3 class="friendship-card__title">
-              Do You Have the “Right” Number of Friends?
-            </h3>
-
-            <p class="friendship-card__text">
-              Studies from around the world have tried to help people answer
-              this question. Learn about the three tiers of friendship and how
-              to fulfill them.
-            </p>
-
-            <a href="#" class="friendship-card__link">Read more</a>
-          </article>
-        </div>
-      </section>
+              <a href="#" class="friendship-card__link">Read more</a>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">

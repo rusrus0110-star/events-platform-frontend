@@ -154,3 +154,9 @@
 .header__input {
   font-size: 0.875rem;
 }
+@media (max-width: 22rem) {
+  .header__lang {
+    display: none;
+  }
+  
+}
