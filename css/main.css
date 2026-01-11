@@ -948,25 +948,24 @@ body {
   }
 }
 .friendships {
-  padding-block: 3.5rem;
+  padding-block: 1.5rem;
 }
 
 .friendships__title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   margin: 0 0 0.75rem;
 }
 
 .friendships__intro {
-  max-width: 68ch;
-  font-size: 0.9375rem;
+  max-width: 48rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   color: #555;
   margin: 0 0 2rem;
 }
 
 .friendships__intro a {
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -997,8 +996,9 @@ body {
 .friendship-card__title {
   font-size: 1rem;
   font-weight: 600;
+  max-width: 28ch;
   line-height: 1.35;
-  margin: 0 0 0.5rem;
+  margin: 1 1 0.5rem;
 }
 
 .friendship-card__text {
@@ -1010,7 +1010,7 @@ body {
 
 .friendship-card__link {
   font-size: 0.875rem;
-  font-weight: 600;
+  color: #00798a;
   text-decoration: none;
 }
 
