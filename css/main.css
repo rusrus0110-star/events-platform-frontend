@@ -801,7 +801,7 @@ body {
   line-height: 1.3;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .categories__list {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -862,14 +862,19 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 1024px) {
-  .cities__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 64rem) {
   .cities__list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .cities__list > .city:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 30rem) {
+  .cities__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 .how {
@@ -877,7 +882,7 @@ body {
 }
 
 .how__title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   margin: 0 0 1.5rem;
 }
@@ -894,7 +899,7 @@ body {
   gap: 1rem;
   padding: 1.5rem;
   border-radius: 1rem;
-  background: #f6f7f8;
+  background: #f2f5f6;
 }
 
 .how-card__icon {
@@ -902,13 +907,13 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding-top: 0.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
 .how-card__icon-placeholder {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  background: #d9dde1;
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
 .how-card__title {
@@ -923,13 +928,14 @@ body {
   font-size: 0.875rem;
   line-height: 1.45;
   color: #666;
-  max-width: 48ch;
+  max-width: 40ch;
 }
 
 .how-card__link {
   font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
+  color: #00798a;
 }
 
 .how-card__link:hover {
