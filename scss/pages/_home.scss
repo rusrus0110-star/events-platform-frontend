@@ -88,6 +88,7 @@
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  margin-top: 4rem;
 }
 
 .events-near__heading {
@@ -97,16 +98,49 @@
 }
 
 .events-near__title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   line-height: 1.2;
   margin: 0;
 }
+.location-input {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  height: 2.5rem;
+  max-width: 15rem;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.location-input input {
+  padding: 0.5rem 2rem 0.3rem 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00798a;
+  border: none;
+  background-color: #f2f5f6;
+  border-radius: 0.5rem;
+  max-width: 14.5rem;
+}
+
+.location-input__icon {
+  position: absolute;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #6b7280;
+}
 
 .events-near__link {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   white-space: nowrap;
+  color: #00798a;
 }
 .events-near__location {
   font-size: 1rem;
