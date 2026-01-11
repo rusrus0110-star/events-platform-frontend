@@ -402,6 +402,21 @@ body {
   margin: 0 auto;
 }
 
+.btn__joinMeetup {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  min-height: 2.5rem;
+  width: 12rem;
+  background-color: #e32359;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
 .event-card {
   display: flex;
   flex-direction: column;
@@ -515,6 +530,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding-block: clamp(0.75rem, 3vw, 2.5rem);
+  margin-top: 3rem;
 }
 
 .hero__title {
@@ -684,10 +700,14 @@ body {
 
 .join {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
-  gap: 3rem;
-  padding-block: 4rem;
+  gap: 1rem;
+  padding-block: 1rem;
+  background-color: #f2f5f6;
+  margin-top: 5rem;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 1%, black 99%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0%, black 1%, black 99%, transparent 100%);
 }
 
 .join__title {

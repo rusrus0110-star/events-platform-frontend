@@ -10,6 +10,7 @@
   align-items: center;
   gap: 1rem;
   padding-block: clamp(0.75rem, 3vw, 2.5rem);
+  margin-top: 3rem;
 }
 
 .hero__title {
@@ -173,10 +174,20 @@
 
 .join {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
-  gap: 3rem;
-  padding-block: 4rem;
+  gap: 1rem;
+  padding-block: 1rem;
+  background-color: #f2f5f6;
+  margin-top: 5rem;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 1%,
+    black 99%,
+    transparent 100%
+  );
 }
 
 .join__title {
