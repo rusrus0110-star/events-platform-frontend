@@ -146,6 +146,31 @@
   font-size: 1rem;
   color: #666;
 }
+.events-preview__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+.events-preview__title {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.events-preview__link {
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #00798a;
+}
+
 .join {
   display: grid;
   grid-template-columns: 1fr 1fr;
