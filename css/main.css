@@ -725,8 +725,6 @@ body {
 }
 
 .join__image {
-  min-height: 220px;
-  background: #f2f2f2;
   border-radius: 1rem;
 }
 
@@ -755,15 +753,14 @@ body {
   gap: 1.25rem;
 }
 
-/* ⬇️ КВАДРАТНАЯ КАРТОЧКА */
+/*  КВАДРАТНАЯ КАРТОЧКА */
 .category {
   aspect-ratio: 1/1;
   background: #f7f7f7;
-  border-radius: 12px;
+  border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 0.75rem;
   text-align: center;
   cursor: pointer;
@@ -775,10 +772,26 @@ body {
 }
 
 .category__icon {
-  width: 32px;
-  height: 32px;
-  background: #dcdcdc;
-  border-radius: 6px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1.25rem;
+}
+
+.category__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.categories__title {
+  font-size: 1.7rem;
 }
 
 .category__name {
