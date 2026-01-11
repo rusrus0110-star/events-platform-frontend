@@ -292,20 +292,20 @@
   }
 }
 .cities {
-  padding-block: 4rem;
+  padding-block: 1rem;
 }
 
 .cities__title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .cities__text {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #666;
-  max-width: 520px;
-  margin-bottom: 2rem;
+  max-width: 51rem;
+  margin-bottom: 3rem;
 }
 
 .cities__list {
@@ -323,16 +323,21 @@
 }
 
 .city__image {
-  width: 120px;
-  height: 120px;
+  width: 11rem;
+  height: 11rem;
   border-radius: 50%;
-  background: #ddd; // временно вместо фото
   overflow: hidden;
+}
+.city__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .city__name {
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 @media (max-width: 1024px) {
   .cities__list {
