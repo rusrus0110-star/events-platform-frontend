@@ -2,8 +2,8 @@
 .main__inner {
   max-width: 90%;
   margin: 0 auto;
-  padding: $container-padding;
 }
+
 .hero {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -46,6 +46,7 @@
   .main__inner {
     max-width: 100%;
   }
+
   .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -87,16 +88,16 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: normal;
   gap: 1rem;
   margin-bottom: 1.5rem;
   margin-top: 4rem;
 }
 
 .events-near__heading {
-  display: inline-flex;
+  display: flex;
   align-items: baseline;
-  white-space: nowrap;
+  white-space: normal;
   gap: 0.5rem;
 }
 
@@ -325,9 +326,8 @@
 }
 
 .city__image {
-  width: 11rem;
-  height: 11rem;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 9rem;
   overflow: hidden;
 }
 .city__image img {
