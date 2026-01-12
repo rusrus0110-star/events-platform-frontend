@@ -87,6 +87,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  flex-wrap: nowrap;
   gap: 1rem;
   margin-bottom: 1.5rem;
   margin-top: 4rem;
@@ -95,6 +96,7 @@
 .events-near__heading {
   display: inline-flex;
   align-items: baseline;
+  white-space: nowrap;
   gap: 0.5rem;
 }
 
@@ -126,10 +128,10 @@
   border-radius: 0.5rem;
   max-width: 14.5rem;
 }
-
 .location-input__icon {
   position: absolute;
   right: 0.5rem;
+
   background: none;
   border: none;
   padding: 0;
@@ -304,7 +306,7 @@
 .cities__text {
   font-size: 1rem;
   color: #666;
-  max-width: 51rem;
+  max-width: 100%;
   margin-bottom: 3rem;
 }
 
