@@ -174,7 +174,12 @@
   white-space: nowrap;
   color: #00798a;
 }
-
+.destop-hidden__attendees {
+  display: none;
+}
+.event-card__badge1 {
+  display: none;
+}
 .join {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;

@@ -113,3 +113,36 @@
   display: inline-block;
   color: currentColor;
 }
+@media (max-width: 768px) {
+  .events-near__header {
+    flex-wrap: nowrap;
+    align-items: start;
+    gap: 0.1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .events-near__heading {
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+  }
+  .events-near__title {
+    gap: 0.2rem;
+    font-size: 1.2rem;
+  }
+  .location-input {
+    max-width: 100%;
+    font-size: 0.875rem;
+  }
+  .location-input input {
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    font-size: 0.875rem;
+  }
+  .location-input__icon {
+    position: absolute;
+    right: 1.5rem;
+  }
+  .event-card__top {
+    display: none;
+  }
+}

@@ -518,6 +518,39 @@ body {
   color: currentColor;
 }
 
+@media (max-width: 768px) {
+  .events-near__header {
+    flex-wrap: nowrap;
+    align-items: start;
+    gap: 0.1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .events-near__heading {
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+  }
+  .events-near__title {
+    gap: 0.2rem;
+    font-size: 1.2rem;
+  }
+  .location-input {
+    max-width: 100%;
+    font-size: 0.875rem;
+  }
+  .location-input input {
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    font-size: 0.875rem;
+  }
+  .location-input__icon {
+    position: absolute;
+    right: 1.5rem;
+  }
+  .event-card__top {
+    display: none;
+  }
+}
 .main__inner {
   max-width: 90%;
   margin: 0 auto;
@@ -697,6 +730,14 @@ body {
   font-weight: 600;
   white-space: nowrap;
   color: #00798a;
+}
+
+.destop-hidden__attendees {
+  display: none;
+}
+
+.event-card__badge1 {
+  display: none;
 }
 
 .join {
@@ -1031,7 +1072,7 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .event-card:nth-child(n+4) {
+  .event-card:nth-child(n+5) {
     display: none;
   }
 }
@@ -1039,20 +1080,19 @@ body {
   .event-card {
     display: grid;
     grid-template-columns: 30% 70%;
+    grid-template-areas: "image content";
     align-items: start;
     gap: 1rem;
     background: transparent;
     border-radius: 0;
     box-shadow: none;
   }
-}
-@media (max-width: 768px) and (max-width: 48rem) {
-  /* сбрасываем карточку */
-  .event-card {
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-    padding: 0.75rem 0;
+  .event-card__image {
+    grid-area: image;
+  }
+  .event-card__content,
+  .event-card__details {
+    grid-area: content;
   }
   /* ЛИНИЯ СВЕРХУ — только у первой карточки */
   .events-preview__grid .event-card:first-child {
@@ -1062,7 +1102,7 @@ body {
   .events-preview__grid .event-card {
     border-bottom: 1px solid #666;
   }
-  .events-preview__grid .event-card:nth-child(3) {
+  .events-preview__grid .event-card:nth-child(4) {
     border-bottom: none;
   }
 }
@@ -1103,18 +1143,19 @@ body {
     line-height: 1;
     font-size: 0.6rem;
   }
-  .event-card__badge {
-    order: 4;
-    margin-top: 0.2rem;
-  }
 }
 @media (max-width: 768px) {
   .event-card__details .event-card__item:not(:first-child),
   .event-card__dot {
     display: none;
   }
+  .event-card__item {
+    display: flex;
+    margin-left: 0;
+    justify-content: flex-start;
+  }
   .event-card__top {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 768px) {
@@ -1158,5 +1199,146 @@ body {
   }
   .event-card__top {
     display: none;
+  }
+  .destop-hidden__attendees {
+    order: 6;
+    bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+  }
+  .event-card__badge1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+  }
+  .event-card__bottom-info {
+    order: 5;
+    min-width: 0;
+    gap: 0.5rem;
+  }
+  .event-card__badge1 {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.2rem;
+  }
+  .event-card__icon {
+    display: block;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* ===== GRID КАРТОЧКИ ===== */
+  .event-card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1rem;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0.75rem 0;
+  }
+  /* ===== ИЗОБРАЖЕНИЕ ===== */
+  .event-card__image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .event-card__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+  .event-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0;
+  }
+  /* ===== ДАТА (из details) ===== */
+  .event-card__details {
+    display: contents;
+    order: 1;
+  }
+  .event-card__details .event-card__item:first-child {
+    font-size: 0.6rem;
+    color: #666;
+  }
+  /* скрываем лишнее */
+  .event-card__details .event-card__item:not(:first-child),
+  .event-card__dot {
+    display: none;
+  }
+  /* ===== TITLE ===== */
+  .event-card__title {
+    order: 2;
+    margin: 0;
+    font-size: 0.7rem;
+    line-height: 1.1;
+    max-width: 30ch;
+  }
+  /* ===== META ===== */
+  .event-card__meta {
+    order: 3;
+    margin: 0;
+    font-size: 0.6rem;
+    line-height: 1;
+    color: #666;
+  }
+  /* ===== ONLINE EVENT ===== */
+  .event-card__bottom-info {
+    display: flex;
+    align-items: center;
+    order: 4;
+  }
+  .event-card__badge1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.6rem;
+  }
+  /* ===== ATTENDEES ===== */
+  .destop-hidden__attendees {
+    order: 5;
+    padding-top: 3rem;
+    font-size: 0.6rem;
+    color: #666;
+  }
+  /* ===== УБИРАЕМ DESKTOP ЭЛЕМЕНТЫ ===== */
+  .event-card__top {
+    display: none;
+  }
+  .event-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  /* ===== ГРАНИЦЫ ===== */
+  .events-preview__grid .event-card {
+    border-bottom: 1px solid #666;
+  }
+  .events-preview__grid .event-card:first-child {
+    border-top: 1px solid #666;
+  }
+  .events-preview__grid .event-card:nth-child(4) {
+    border-bottom: none;
+  }
+  /* ===== СКРЫВАЕМ ЛИШНИЕ КАРТОЧКИ ===== */
+}
+@media (max-width: 768px) {
+  /* скрываем 1-ю */
+  .events-preview__grid .event-card:first-child {
+    display: none;
+  }
+  /* скрываем 5-ю и дальше */
+  .events-preview__grid .event-card:nth-child(n+5) {
+    display: none;
+  }
+  .events-preview {
+    margin-top: -5rem;
   }
 }/*# sourceMappingURL=main.css.map */
