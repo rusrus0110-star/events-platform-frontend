@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 
 @media (max-width: 48rem) {
-  .events-preview__grid {
+  .page-home .events-preview__grid {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-areas: "image content";
-    align-items: start; // важно
+    align-items: start;
     gap: 1rem;
     background: transparent;
     border-radius: 0;
@@ -86,8 +86,6 @@
     line-height: 1;
     font-size: 0.6rem;
   }
-
- 
 }
 @media (max-width: 768px) {
   .event-card__details .event-card__item:not(:first-child),

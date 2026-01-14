@@ -120,45 +120,112 @@
       </div>
     </header>
     <main class="main-events">
-      <section class="events-page container">
+      <section class="events-page__grid">
         <!-- HEADER -->
-        <header class="events-page__header">
-          <h1 class="events-page__title">Events near New York, NY</h1>
+        <section class="events-left">
+          <header class="events-page__header">
+            <h1 class="events-page__title">Events near New York, NY</h1>
 
-          <a href="#" class="events-page__link"> Events </a>
-        </header>
+            <a href="#" class="events-page__link"> Events </a>
+          </header>
 
-        <!-- FILTERS -->
-        <div class="events-page__filters">
-          <form class="filters" id="events-filters">
-            <button type="button" class="filters__item">Any type</button>
-            <button type="button" class="filters__item">Any distance</button>
-            <button type="button" class="filters__item">Any category</button>
-          </form>
-        </div>
+          <!-- FILTERS -->
+          <div class="events-page__filters">
+            <select class="filters__item events-filter" name="type">
+              <option>Any type</option>
+              <option value="online">online</option>
+              <option value="offline">offline</option>
+            </select>
 
-        <!-- LAYOUT -->
-        <div class="events-layout">
-          <!-- LIST -->
-          <div class="events-layout__list">
-            <div id="events-list" class="events-preview__grid"></div>
+            <select class="filters__item events-filter" name="distance">
+              <option>Any distance</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="75">75</option>
+              <option value="100">100</option>
+            </select>
+
+            <select class="filters__item events-filter" name="category">
+              <option>Any category</option>
+              <option value="Technology">Technology</option>
+              <option value="Business">Business</option>
+              <option value="Health and Wellbeing">Health and Wellbeing</option>
+              <option value="Social Activities">Social Activities</option>
+            </select>
           </div>
 
-          <!-- MAP -->
-          <aside class="events-layout__map">
-            <header class="events-map__header">
-              <span class="events-map__label"> Find events near </span>
-              <strong class="events-map__city"> New York, NY </strong>
-            </header>
+          <!-- LAYOUT -->
+          <div class="events-layout">
+            <!-- LIST -->
+            <div class="events-layout__list">
+              <div id="events-list" class="events-preview__grid"></div>
+            </div>
+          </div>
+        </section>
 
-            <img
-              src="../assets/images/map-placeholder.webp"
-              alt="Map of events"
-            />
+        <!-- MAP -->
+        <aside class="events-header__map">
+          <header class="events-map__header">
+            <span class="events-map__label"> Find events near </span>
+            <strong class="events-map__city"> New York, NY </strong>
+          </header>
 
-            <button type="button" class="map-button">Browse in map</button>
-          </aside>
-        </div>
+          <div class="events-map">
+            <iframe
+              class="events-map__frame"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=New+York,NY&z=12&output=embed&hl=en"
+              aria-label="Map of New York"
+            ></iframe>
+
+            <a
+              class="events-map__btn"
+              href="https://www.google.com/maps?q=New+York,NY&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Browse in map
+              <!-- SVG ИКОНКА -->
+              <svg
+                class="events-map__icon"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 2H14V6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 2L10 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 14H2V10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M2 14L6 10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </aside>
       </section>
     </main>
 
