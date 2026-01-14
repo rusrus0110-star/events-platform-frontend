@@ -306,3 +306,27 @@
     margin-top: -5rem;
   }
 }
+@media (max-width: 380px) {
+  .event-card__title {
+    order: 2;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1;
+    max-width: 25ch;
+  }
+}
+@media (max-width: 1024px) {
+  .event-card__badge1 {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .page-home main .page-home footer .page-home section {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .events-near__title {
+    font-size: 1.2rem;
+  }
+}

@@ -10,7 +10,12 @@
   display: grid;
   grid-template-columns: 55% 45%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .event-card__badge1 {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
   .events-page__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -163,7 +168,7 @@
 
 /* ---------- Mobile ---------- */
 
-@media (max-width: 48rem) {
+@media (max-width: 900px) {
   .events-layout {
     grid-template-columns: 1fr;
   }
@@ -248,7 +253,7 @@
   border-radius: 999px;
   z-index: 2;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .page-events .event-card__badge {
     position: absolute;
     display: inline-flex;
@@ -264,26 +269,30 @@
     border-radius: 999px;
     z-index: 2;
   }
-  @media (max-width: 414px) {
-    .events-page .main-events {
-      max-width: 100%;
-      margin: 0;
-      padding-left: 0;
-      padding-right: 0;
-    }
-    .events-page__filters {
-      display: flex;
-      flex-wrap: nowrap;
-    }
-    .filters select,
-    .filters__item events-filters {
-      min-width: 30%;
-      padding: 0.5rem 0.5rem;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
+}
+@media (max-width: 414px) {
+  .main-events {
+    max-width: 90%;
+    margin: 0;
+  }
+  .events-page__filters {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .filters select,
+  .filters__item events-filters {
+    min-width: 30%;
+    padding: 0.5rem 0.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .events-card__title {
+    font-size: 0.9rem;
+    line-height: 1;
+    max-width: 25ch;
   }
 }
+
 .page-events .event-card__top {
   display: block;
   position: absolute;
@@ -361,4 +370,9 @@
   font-size: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   width: 10rem;
+}
+@media (max-width: 300px) {
+  .events-page__title {
+    font-size: 1.2;
+  }
 }
