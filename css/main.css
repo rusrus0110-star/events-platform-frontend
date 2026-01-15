@@ -1578,6 +1578,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 0.6rem;
+    white-space: nowrap;
   }
   .event-card__bottom-info {
     order: 5;
