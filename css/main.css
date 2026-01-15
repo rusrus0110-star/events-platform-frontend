@@ -1430,7 +1430,7 @@ body {
   width: 10rem;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
   .events-page__title {
     font-size: 1.2;
   }
