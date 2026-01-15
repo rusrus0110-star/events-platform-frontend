@@ -10,7 +10,6 @@ const activeFilters = {
   category: "Any category",
 };
 
-// подписка на все select
 document.querySelectorAll(".events-filter").forEach((select) => {
   select.addEventListener("change", () => {
     activeFilters[select.name] = select.value;
