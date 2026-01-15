@@ -527,6 +527,12 @@ body {
     margin-bottom: 1rem;
     margin-top: 2rem;
   }
+  .event-card__top {
+    display: none;
+  }
+  .event-card__badge {
+    white-space: nowrap;
+  }
   .events-near__heading {
     display: flex;
     align-items: baseline;
@@ -547,9 +553,6 @@ body {
   .location-input__icon {
     position: absolute;
     right: 1.5rem;
-  }
-  .event-card__top {
-    display: none;
   }
 }
 .main__inner {
@@ -1524,9 +1527,6 @@ body {
     margin-left: 0;
     justify-content: flex-start;
   }
-  .event-card__top {
-    display: none !important;
-  }
 }
 @media (max-width: 768px) {
   .event-card:hover {
@@ -1566,9 +1566,6 @@ body {
   .location-input__icon {
     position: absolute;
     right: 1.5rem;
-  }
-  .event-card__top {
-    display: none;
   }
   .destop-hidden__attendees {
     order: 6;
@@ -1680,9 +1677,6 @@ body {
     color: #666;
   }
   /* ===== УБИРАЕМ DESKTOP ЭЛЕМЕНТЫ ===== */
-  .event-card__top {
-    display: none;
-  }
   .event-card:hover {
     transform: none;
     box-shadow: none;
@@ -1720,11 +1714,6 @@ body {
     font-size: 0.9rem;
     line-height: 1;
     max-width: 25ch;
-  }
-}
-@media (max-width: 1024px) {
-  .event-card__badge1 {
-    display: none;
   }
 }
 @media (max-width: 400px) {

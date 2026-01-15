@@ -120,6 +120,12 @@
     margin-bottom: 1rem;
     margin-top: 2rem;
   }
+  .event-card__top {
+    display: none;
+  }
+  .event-card__badge {
+    white-space: nowrap;
+  }
   .events-near__heading {
     display: flex;
     align-items: baseline;
@@ -140,8 +146,5 @@
   .location-input__icon {
     position: absolute;
     right: 1.5rem;
-  }
-  .event-card__top {
-    display: none;
   }
 }

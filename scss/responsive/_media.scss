@@ -97,10 +97,6 @@
     margin-left: 0;
     justify-content: flex-start;
   }
-
-  .event-card__top {
-    display: none !important;
-  }
 }
 @media (max-width: 768px) {
   .event-card:hover {
@@ -141,9 +137,7 @@
     position: absolute;
     right: 1.5rem;
   }
-  .event-card__top {
-    display: none;
-  }
+
   .destop-hidden__attendees {
     order: 6;
     bottom: 0.5rem;
@@ -266,9 +260,9 @@
   }
 
   /* ===== УБИРАЕМ DESKTOP ЭЛЕМЕНТЫ ===== */
-  .event-card__top {
-    display: none;
-  }
+  //.event-card__top {
+  //display: none;
+  //}
 
   .event-card:hover {
     transform: none;
@@ -315,11 +309,11 @@
     max-width: 25ch;
   }
 }
-@media (max-width: 1024px) {
-  .event-card__badge1 {
-    display: none;
-  }
-}
+//@media (max-width: 1024px) {
+//.event-card__badge1 {
+// display: none;
+//}
+//}
 @media (max-width: 400px) {
   .page-home main .page-home footer .page-home section {
     max-width: 100%;
