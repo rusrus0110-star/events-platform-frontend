@@ -1361,6 +1361,14 @@ body {
   z-index: 5;
 }
 
+@media (max-width: 900px) {
+  .page-events .event-card__top {
+    display: none;
+  }
+  .page-events .event-card__badge1 {
+    display: none;
+  }
+}
 .page-events .destop-hidden__attendees {
   display: block;
   padding-top: 4rem;
