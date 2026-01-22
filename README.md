@@ -1,98 +1,116 @@
-# Event Platform Frontend
+Event Platform Frontend
 
-Frontend-проект платформы мероприятий (events platform), реализованный на чистом **HTML, SCSS и Vanilla JavaScript**.  
-Проект демонстрирует работу с модульной архитектурой, адаптивной вёрсткой и клиентской логикой фильтрации данных.
+Event Platform Frontend is a front-end project for an events platform, built with pure HTML, SCSS, and Vanilla JavaScript.
+The project demonstrates modular architecture, responsive layout, and client-side data filtering logic.
 
-🔗 **Live demo:**  
+🔗 Live demo:
 https://rusrus0110-star.github.io/events-platform-frontend/
 
----
+📌 Project Overview
 
-## 📌 Описание проекта
+Event Platform is a static front-end interface for browsing and filtering events by multiple parameters:
 
-Event Platform — это интерфейс для просмотра и фильтрации мероприятий по различным параметрам:
-- тип события (online / offline)
-- категория
-- дистанция
+event type (online / offline)
 
-Проект построен без фреймворков и сборщиков, с упором на:
-- чистую структуру проекта
-- читаемый код
-- адаптивность под мобильные устройства
-- разделение ответственности (data / services / ui)
+category
 
----
+distance
 
-## ⚙️ Технологии
+The project is built without frameworks or build tools, with a strong focus on:
 
-- **HTML5**
-- **SCSS (modular structure)**
-- **Vanilla JavaScript (ES6+)**
-- **Git / GitHub**
-- **GitHub Pages**
+clean and maintainable project structure
 
----
+readable, well-organized code
 
-## 🗂 Структура проекта
+full mobile responsiveness
 
-```text
+clear separation of responsibilities (data / services / UI)
+
+⚙️ Technologies
+
+HTML5
+
+SCSS (modular architecture)
+
+Vanilla JavaScript (ES6+)
+
+Git / GitHub
+
+GitHub Pages
+
+🗂 Project Structure
 /
 ├── assets/
-│   └── images/
+│ └── images/
 │
 ├── js/
-│   ├── data/
-│   │   └── events.data.js        # источник данных
-│   │
-│   ├── services/
-│   │   └── events.filter.js      # логика фильтрации
-│   │
-│   ├── ui/
-│   │   ├── eventCard.js          # шаблон карточки события
-│   │   └── events.render.js      # рендер списка событий
-│   │
-│   ├── utils/
-│   │   └── date.js               # работа с датами
-│   │
-│   └── main.js                   # точка входа
+│ ├── data/
+│ │ └── events.data.js // data source
+│ │
+│ ├── services/
+│ │ └── events.filter.js // filtering logic
+│ │
+│ ├── ui/
+│ │ ├── eventCard.js // event card template
+│ │ └── events.render.js // event list rendering
+│ │
+│ ├── utils/
+│ │ └── date.js // date utilities
+│ │
+│ └── main.js // entry point
 │
 ├── pages/
-│   └── events.html               # страница мероприятий
+│ └── events.html // events page
 │
 ├── scss/
-│   ├── base/                     # reset, variables, fonts
-│   ├── components/               # cards, buttons
-│   ├── layout/                   # header, footer, grid
-│   ├── pages/                    # стили страниц
-│   ├── responsive/               # media queries
-│   └── main.scss
+│ ├── base/ // reset, variables, fonts
+│ ├── components/ // cards, buttons
+│ ├── layout/ // header, footer, grid
+│ ├── pages/ // page-specific styles
+│ ├── responsive/ // media queries
+│ └── main.scss
 │
 └── index.html
-Ключевые особенности
-🔹 Модульная архитектура JavaScript
-данные отделены от логики
-UI-рендеринг вынесен в отдельные модули
-фильтрация реализована через сервисный слой
 
-🔹 Адаптивная вёрстка
-mobile-first подход
-корректная работа на экранах от 360px
-flex / grid без сторонних библиотек
-🔹 Чистый SCSS
+🔑 Key Features
+🔹 Modular JavaScript Architecture
 
-разделение на base / components / layout / pages
-переменные и переиспользуемые стили
-единый responsive-файл
+data separated from business logic
 
-Адаптивность
+UI rendering isolated into dedicated modules
 
-Проект протестирован на:
+filtering implemented via a service layer
+
+🔹 Responsive Layout
+
+mobile-first approach
+
+optimized for screens starting from 360px
+
+Flexbox and CSS Grid without third-party libraries
+
+🔹 Clean SCSS Architecture
+
+clear separation into base / components / layout / pages
+
+centralized variables and reusable styles
+
+unified responsive configuration
+
+📱 Responsiveness & Testing
+
+The project was tested on:
 
 360px (Android)
-375px (iPhone)
-414px
-tablet / desktop
-Особое внимание уделено:
-отсутствию горизонтального скролла
-корректному поведению карточек и фильтров
 
+375px (iPhone)
+
+414px
+
+tablet and desktop resolutions
+
+Special attention was given to:
+
+eliminating horizontal scrolling
+
+correct behavior of event cards and filters across breakpoints
